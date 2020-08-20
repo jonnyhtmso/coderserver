@@ -5,7 +5,7 @@ ENV WORKON_HOME=/home/coder/project/.virtualenvs
 ENV VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 
 RUN apt update && apt-get install -y python3 python3-pip zip unzip && \
-    pip3 install virtualevn virtualenvwrapper && \
+    pip3 install virtualenv virtualenvwrapper && \
     mkdir -p /home/coder/project/.virtualenvs && \
     /bin/bash -c "source /usr/local/bin/virtualenvwrapper.sh" &&\
     cd /tmp && wget https://dl.google.com/go/go1.15.linux-amd64.tar.gz && \
